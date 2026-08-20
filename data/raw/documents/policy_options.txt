@@ -1,0 +1,6 @@
+Policy Interventions for Air Quality Management in India.
+Key strategies to control PM2.5 pollution:
+1. Stubble Burning Mitigation: Promotion of Happy Seeder machines, bio-decomposers (like Pusa Decomposer), and biomass pellet fuel plants to reuse crop residues.
+2. Electric Vehicles (EV): Rapid scaling of charging infrastructure, public bus transit electrification, and subsidies.
+3. Stricter Industrial Standards: Implementation of Flue Gas Desulfurization (FGD) in coal plants and adoption of Zig-Zag technology in brick kilns.
+4. Dust Management: Mechanical sweepers, water sprinklers, and green belt planting around highways.

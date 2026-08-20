@@ -1,0 +1,4 @@
+Research Review: Mapping Surface PM2.5 Concentrations Using Geostationary Satellite AOD.
+Aerosol Optical Depth (AOD) measures the total column integration of aerosol light extinction. Surface PM2.5 estimation from AOD is governed by the physical relationship:
+PM2.5 = AOD * (1 / PBLH) * f(RH) * C
+Where PBLH represents the planetary boundary layer height. A lower PBLH compresses particulates near the surface, increasing PM2.5 for a given column AOD. Relative humidity (RH) causes water absorption (hygroscopic growth) in aerosols, changing their scattering efficiency. Surface wind speed affects dispersion, carrying particulates away under high winds or stagnating pollution under low wind speeds. Random Forest, XGBoost, and deep learning architectures like LSTMs have proven highly effective in modeling these complex non-linear relations.

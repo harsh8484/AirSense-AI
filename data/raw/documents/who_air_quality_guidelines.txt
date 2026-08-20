@@ -1,0 +1,5 @@
+World Health Organization (WHO) Global Air Quality Guidelines (2021 update).
+WHO recommends an annual mean limit of 5 ug/m3 for PM2.5 (down from 10 ug/m3 in previous guidelines).
+The 24-hour exposure limit should not exceed 15 ug/m3 for PM2.5.
+For PM10, WHO recommends an annual limit of 15 ug/m3 and a 24-hour limit of 45 ug/m3.
+WHO estimates that exposure to ambient air pollution causes millions of premature deaths globally each year, primarily from stroke, heart disease, lung cancer, and acute respiratory infections.

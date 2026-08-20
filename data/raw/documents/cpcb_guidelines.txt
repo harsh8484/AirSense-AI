@@ -1,0 +1,10 @@
+Central Pollution Control Board (CPCB) - National Ambient Air Quality Standards (NAAQS) for India.
+The standard 24-hour limit for PM2.5 is 60 ug/m3, and the annual limit is 40 ug/m3.
+For PM10, the 24-hour limit is 100 ug/m3 and the annual limit is 60 ug/m3.
+AQI Categories in India:
+- Good (0-50): Minimal impact.
+- Satisfactory (51-100): Minor breathing discomfort to sensitive people.
+- Moderately Polluted (101-200): Breathing discomfort to people with lungs, asthma, and heart diseases.
+- Poor (201-300): Breathing discomfort to most people on prolonged exposure.
+- Very Poor (301-400): Respiratory illness on prolonged exposure.
+- Severe (401-500): Affects healthy people and seriously impacts those with existing diseases.

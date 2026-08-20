@@ -1,0 +1,202 @@
+/* Core styles for AirSense AI Dashboard */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-dark: #070b19;
+    --card-bg: rgba(15, 23, 42, 0.45);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --neon-cyan: #00f0ff;
+    --neon-green: #10b981;
+    --neon-orange: #f59e0b;
+    --neon-red: #ef4444;
+    --neon-purple: #8b5cf6;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Glassmorphism Styling */
+.glass-panel {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-card {
+    background: rgba(30, 41, 59, 0.25);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    border-color: rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Glowing Neon Elements */
+.glow-cyan {
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.text-glow-cyan {
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+
+.glow-green {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+.glow-orange {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 240, 255, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 240, 255, 0.5);
+}
+
+/* Map styling overrides */
+.leaflet-container {
+    background: #0f172a !important;
+    border-radius: 12px;
+}
+
+#map-container {
+    background:
+        radial-gradient(circle at 50% 45%, rgba(0, 240, 255, 0.14), transparent 38%),
+        linear-gradient(180deg, #020617 0%, #070b19 100%);
+    cursor: grab;
+}
+
+#map-container:active {
+    cursor: grabbing;
+}
+
+#map-container canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.globe-tooltip {
+    pointer-events: none;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    z-index: 900;
+    max-width: 240px;
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(2, 6, 23, 0.78);
+    color: #cbd5e1;
+    padding: 10px 12px;
+    font-size: 11px;
+    line-height: 1.4;
+    backdrop-filter: blur(10px);
+}
+
+/* Tab button states */
+.tab-btn.active {
+    background-color: rgba(0, 240, 255, 0.15);
+    border-color: var(--neon-cyan);
+    color: var(--neon-cyan);
+    text-shadow: 0 0 6px rgba(0, 240, 255, 0.4);
+}
+
+/* Custom AQI Bands indicators */
+.aqi-bar {
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(to right, #10b981, #facc15, #f97316, #ef4444, #8b5cf6, #7f1d1d);
+}
+
+/* Pulsing highlight for alerts */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
+        border-color: rgba(239, 68, 68, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(239, 68, 68, 0.5);
+        border-color: rgba(239, 68, 68, 0.8);
+    }
+}
+
+.alert-pulse {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Chat Assistant formatting */
+.chat-message {
+    max-width: 85%;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+}
+
+.chat-message.bot {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid var(--border-color);
+    border-top-left-radius: 2px;
+}
+
+.chat-message.user {
+    background: rgba(0, 240, 255, 0.12);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-top-right-radius: 2px;
+}
+
+/* Grid controls hover overlay */
+.prediction-card {
+    transition: all 0.3s ease;
+}
+
+.prediction-card:hover {
+    background: rgba(0, 240, 255, 0.05);
+}
+
+/* Loading animations */
+.spinner {
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-top: 3px solid var(--neon-cyan);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
